@@ -1,3 +1,12 @@
-print('this is not')
+# this is comment.
 
-print('just checking..')
+print("hello world")
+
+print(""" this is triple double quotation and 
+
+we can also break the line.....""")
+
+"""
+this is multi line comment.
+"""
+
