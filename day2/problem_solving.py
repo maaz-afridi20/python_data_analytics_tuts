@@ -48,3 +48,19 @@ elif choice == 4:
     print('area of triangle is ', area)
 else:
     print('Invalid Input ')
+
+
+# check whether the given input is vowel or not
+vowelCheck = input('enter any string ')
+if vowelCheck == 'a' or vowelCheck == 'e' or vowelCheck == 'i' or vowelCheck == 'o' or vowelCheck == 'u':
+    print('yes vowel')
+else:
+    print('not a vowel')
+
+
+vovwels = ['a', 'e', 'i', 'o', 'u']
+againVowelCheck = input('enter str ')
+if againVowelCheck in vovwels:
+    print('yesss great')
+else:
+    print('nooooo')
