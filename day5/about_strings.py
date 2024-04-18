@@ -13,6 +13,15 @@ capitalize => will capitalize the first letter of all the string
 format =>  in this we can use the string interpolation like thing...
 center => by this we can centralize our variable in something
 
+isalnum => return true if all character in string are alphanumeric(mean it contain alphabet and numbers both)
+isdecimal => return true if all character in string are decimal
+isalpha => return true if all character in string are alphabet
+isdigit => return true if all character in string are digit(if there is . then also it will return false
+isnumeric => return true if all character in string are numeric
+islower => return true if all character in string are lower case
+isupper => return true if all character in string are upper case
+isspace => return true if all character in string are white spaces
+istitle => return true if the string follow the rules of title
 """
 
 name = "my name is HARRy potter."
@@ -48,4 +57,31 @@ print(bbb.format(secondName, age))  # this will also print age with the name als
 thirdName = "john"
 print(thirdName.center(10, "*"))  # this will center the name john and also print some *
 #  before and after the name.
+
+print("-"*30)
+newName = "this is new name"
+hello = "helloworld1233"
+cc = "42323"
+d = "13.34"
+print(newName, newName.isalnum())
+print(newName, newName.isdecimal())
+print(newName, newName.isalpha())
+print(newName, newName.islower())
+print(newName, newName.isupper())
+print(newName, newName.isspace())
+print(hello, hello.isalnum())
+print(cc, cc.isalnum())
+print(d, d.isdigit())
+
+
+print(cc, cc.isdecimal())
+print(cc, cc.isnumeric())  # will return true if the characters are digits
+
+
+blank = "   "
+print(blank.isspace())  # it only checks the blank spaces
+# if it only contains all white spaces then it will return true
+
+chekss = "Checking This String"
+print(chekss.istitle())  # this will return true because the first string of all letter is capital
 
