@@ -8,7 +8,8 @@ strip => this will remove all the whitespace from the string
 split => is used to split string and will return it into list.
 ljust => if we want to put somthing on the left side of the string
 rjust => if we want to put somthing on the right side of the string
-
+replace => in order to replce some value with other...
+rindex => 
 """
 
 
@@ -52,5 +53,20 @@ print(g.split("."))  # this will split this string on . and will write it in lis
 
 print("-"*40)
 h = "harry potter"
-i = h.ljust(20)
-print(h, 'is known')
+i = h.ljust(20, "*")
+print(h, "is my fav movie")
+
+#  this is just like the ljust it will give some spaces or we can also specify
+#  some * or anything to the right side.
+
+print("-"*40)
+hh = "harry potter"
+ii = hh.rjust(20, "*")
+print(ii, "is my fave")
+
+
+print("-"*40)
+nameeee = "my name is kkhan"
+print(nameeee.replace("kkhan","john"))  # first value is that value which we want to replce and
+#   second value is that value by which we want to replace that value
+
