@@ -13,3 +13,12 @@ def add_numbers(num1, num2):
 
 
 add_numbers(100, 43)
+
+
+def find_area_of_rectangle(length, width):
+    area = length * width
+    print('area of rectangle is : ', area)
+
+
+find_area_of_rectangle(28, 18)
+
