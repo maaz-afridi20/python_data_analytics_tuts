@@ -4,9 +4,16 @@ Functions Of Sets :
            not have any order.
 👉 .pop  => this will remove anything randomly from the set
 👉 .remove => if we have to remove some value specific
-              then we can use this .remove("anyvalue") instead of .pop()
+              then we can use this .remove("any value") instead of .pop()
 👉 .discard  => it work same just like .remove()
                 it can also be use if we want to remove some value specifically.
+                the main difference is that when we use .remove method then for
+                deleting that element must have to be present in the set
+                if that element is not present then it will throw error.
+
+                if we use .discard method if that element is not present in the set it will
+                not throw any error. if the element is present it will delete that element
+                otherwise nothing error etc.
 👉 .copy    => copy whole set.
 
 👉 .isDisjoint() => the disjoint will check 2 or more than 2 sets that
