@@ -65,7 +65,7 @@ print(add_all([10, 10, 10]))
 
 
 # same addition of list using recursion method....
-
+ 
 def add_all_2(numbers):
     if len(numbers) == 1:
         return numbers[0]
