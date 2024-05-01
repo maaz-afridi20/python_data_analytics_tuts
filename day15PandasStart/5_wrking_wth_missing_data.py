@@ -50,6 +50,24 @@ dd.replace()    tu for example hmm kahi koii aisi condition hogii k NaN ko delet
                 now we can replace this with...
 
                 dd["salary"] = dd["salary"].replace(np.nan, 51755)
+
+
+                magar agar humein ab koii name haii ya Female, ya Male parameter hai ab hm iss mein tu
+                slaray kii values naii dal sktay, ya phirr iss ka mean etc b naii nikal sktay..
+                tu ab hm ye kr sktay hain k iss liye aik orr new method haii k
+dd.fillna(method="bfill") =>  ab ye, ye karega k for example agar koii column hai uss mein male(m)
+                              and felame(f) likhaa hai tu ab hm jab ye lagayengay tu ab ye ye karega
+                              k for example jahan prr b value null hai uss k neechay ki value dhekega
+                              tu agar wo f hogi tu uss mein f likh lega agar wo m hogi tu uss mein b
+                              m likh lega... bfill ka matlab hai k below fill
+dd.fillna(method="ffill")  => ye b same work karega ka magar ye oper ki value say fill kar dega
+                              jiss tarah bfill say neechay ki value ko dhekh krr null value ko fill
+                              kiyaa thaa ye ooper ki value ko dhekh krr fill ke dega.. tu iss mein ab
+                              thorii sii correctness ajayee gii...
+                              ffill = forward fill
+
+print(dd["gender"].fillna(method="ffill"))  # we can also specify one column....
+
 """
 
 import pandas as pd
@@ -71,3 +89,10 @@ dd.dropna()  # will delete NaN values from the whole file
 dd.replace(np.nan, "hello")  # will replace NaN values by hello from the whole file
 
 dd["salary"] = dd["salary"].replace(np.nan, 12000)
+
+
+print(dd.fillna(method="bfill"))
+print(dd.fillna(method="ffill"))
+
+print(dd["gender"].fillna(method="ffill"))  # we can also specify one column....
+
